@@ -21,8 +21,9 @@ import json
 class DodisSpider(scrapy.Spider):
     name = "dodis"
     
-    # Générer les URLs à scraper
-    start_urls = [f"https://dodis.ch/{str(i).zfill(5)}" for i in range(61431, 61438)]  # Ajustez la plage selon vos besoins
+    # URLs à scraper
+    start_urls = [f"https://dodis.ch/{str(i).zfill(5)}" for i in range(61431, 61438)]  # Ajuster la plage 
+    # robots.txt pour fichiers interdits à scraper
 
     # Possibilité de scraper à partir des SPAN3 et SPAN9
     
