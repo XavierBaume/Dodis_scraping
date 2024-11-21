@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[7]:
-
-
 import pandas as pd
 import re
 
@@ -47,6 +41,13 @@ if 'document_if_published_publication_details' in df.columns:
         lambda x: re.search(r"(Bd\.\s?\d{2})", x).group(0) if isinstance(x, str) and re.search(r"(Bd\.\s?\d{2})", x) else ""
     )
 
+# Supprimer les mentions "Bd." et "Dok." dans les colonnes concernées
+if 'document_if_published_publication_details' in df.columns:
+    df['document_if_published_publication_details'] = df['document_if_published_publication_details'].str.replace("Bd. ", "", regex=False)
+
+if 'document_if_published_volume_reference_noDoc' in df.columns:
+    df['document_if_published_volume_reference_noDoc'] = df['document_if_published_volume_reference_noDoc'].str.replace("Dok. ", "", regex=False)
+
 # Réorganiser les colonnes selon les instructions
 columns_order = [
     'document_digital_id',  # Interverti avec dates_document_date
@@ -67,10 +68,3 @@ df = df[columns_order]
 df.to_csv(output_file, index=False)
 
 print(f"Fichier transformé et enregistré sous {output_file}")
-
-
-# In[ ]:
-
-
-
-
