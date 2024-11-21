@@ -3,4 +3,6 @@ Scripts utilisés pour :
 (2) Convertir le fichier JSON vers un fichier CSV
 (3) Effectuer un post-traitement du fichier CSV pour la BD
 
-Les fichiers JSON et CSV sont joints.
+Les fichiers JSON et CSV succesifs sont joints.
+
+Le fichier dodis_dataBaseRendu_postcorrected.csv constitue l'élément final transmis dans le 1er rendu. 
