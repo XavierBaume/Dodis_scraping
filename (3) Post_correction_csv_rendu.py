@@ -55,10 +55,14 @@ columns_order = [
     'document_summary',  # Placé en 3ᵉ position
     'document_type_document',  # Placé en 4ᵉ position
     'location_1',  # Première colonne des locations
-    'location_2',  # Placé en 5ᵉ position (première valeur après split)
+    'location_2',# Placé en 5ᵉ position (première valeur après split)
+    'location_3',
+    'location_4',
+    'location_5',
+    
 ] + [col for col in df.columns if col not in [
     'document_digital_id', 'dates_document_date', 'document_summary', 
-    'document_type_document', 'location_1', 'location_2'
+    'document_type_document', 'location_1', 'location_2', 'location_3', 'location_4', 'location_5',
 ]]
 
 # Réordonner les colonnes
