@@ -5,4 +5,4 @@ Scripts utilisés pour :
 
 Les fichiers JSON et CSV succesifs sont joints.
 
-Le fichier bis_dodis_dataBaseRendu_postcorrected.csv constitue l'élément final transmis dans le 1er rendu. 
+Le fichier dodis_dataBaseRendu_postcorrected.csv constitue l'élément final transmis dans le 1er rendu. Le fichier bis_dodis_dataBaseRendu_postcorrected.csv est réarrangé selon l'ordre des colonnes
