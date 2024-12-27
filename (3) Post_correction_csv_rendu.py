@@ -56,7 +56,7 @@ columns_order = [
     'document_type_document',  # Placé en 4ᵉ position
     'location_1',  # Première colonne des locations
     'location_2',# Placé en 5ᵉ position (première valeur après split)
-    # Ajout
+    # Ajout Pour le rendu n°2
     'location_3',
     'location_4',
     'location_5',
