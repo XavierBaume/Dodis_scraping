@@ -1,6 +1,5 @@
 import pandas as pd
 
-# Charger le fichier CSV
 file_path = 'bis_dodis_dataBaseRendu_transformed_final.csv'
 data = pd.read_csv(file_path)
 
